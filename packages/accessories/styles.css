@@ -1,0 +1,86 @@
+/* Application-local styles; shell primitives supply window chrome and bevels. */
+.acc-app-body{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
+.acc-notepad .window-body,.acc-wordpad .window-body,.acc-calculator .window-body,.acc-command .window-body{min-height:0}
+.acc-tool-button{font:inherit;min-height:23px;min-width:24px;padding:2px 6px;color:#000;cursor:default}
+.acc-tool-button:focus-visible{outline:1px dotted #000;outline-offset:-5px}
+.acc-tool-button:disabled{color:#808080;text-shadow:1px 1px #fff}
+.acc-input{box-sizing:border-box;min-width:0;min-height:23px;border:2px solid;border-color:#808080 #fff #fff #808080;border-radius:0;background:#fff;color:#000;font:inherit;padding:2px 4px;box-shadow:inset 1px 1px #000}
+.acc-input:focus{outline:none}
+.acc-dialog-window .acc-form-dialog{padding:14px;display:flex;flex-direction:column;gap:10px;overflow:auto;flex:1;min-height:0}
+.acc-form-message{margin:0 0 3px;line-height:1.5;white-space:pre-wrap}
+.acc-form-row{display:flex;align-items:center;gap:9px;min-height:23px}
+.acc-form-row>span{flex:0 0 112px}
+.acc-form-row>.acc-input{flex:1;width:100%}
+.acc-form-row>input[type=checkbox]{flex:0 0 auto;width:14px;height:14px;min-height:0;box-shadow:none;accent-color:#000080;margin-left:0}
+.acc-dialog-buttons{display:flex;justify-content:flex-end;gap:7px;margin-top:auto;padding-top:7px}
+.acc-dialog-buttons button{min-width:75px;min-height:26px}
+.acc-print-frame{position:fixed;right:100%;bottom:100%;width:1px;height:1px;border:0}
+
+/* Notepad */
+.acc-notepad-editor{box-sizing:border-box;display:block;width:100%;flex:1;min-height:0;resize:none;margin:0;border:2px solid;border-color:#808080 #fff #fff #808080;border-radius:0;padding:3px 4px;background:#fff;color:#000;font:13px/1.4 "Lucida Console","Courier New",monospace;tab-size:8;outline:none;overflow:auto;box-shadow:inset 1px 1px #000}
+.acc-notepad-editor::selection{background:#000080;color:#fff}
+.acc-notepad .statusbar{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:0}
+
+/* WordPad */
+.acc-wordpad-toolbar,.acc-wordpad-formatbar{display:flex;align-items:center;gap:2px;min-height:29px;padding:2px 4px;flex-shrink:0;border-bottom:1px solid #808080;box-shadow:0 1px #fff;overflow-x:auto;overflow-y:hidden}
+.acc-wordpad-toolbar[hidden],.acc-wordpad-formatbar[hidden],.acc-wordpad-ruler[hidden]{display:none}
+.acc-wordpad-toolbar .acc-tool-button{font-size:16px;width:28px;height:26px;padding:1px;flex:0 0 28px}
+.acc-wordpad-formatbar .acc-tool-button{width:25px;height:25px;padding:1px 3px;font-family:Arial,sans-serif;font-size:13px;flex:0 0 25px}
+.acc-font-select{width:163px;flex:0 0 163px}
+.acc-size-select{width:45px;flex:0 0 45px;margin-right:3px}
+.acc-bold{font-weight:bold!important}
+.acc-italic{font-style:italic!important}
+.acc-underline{text-decoration:underline}
+.acc-pressed{border-color:#404040 #fff #fff #404040!important;box-shadow:inset 1px 1px #808080!important;background:repeating-conic-gradient(#c0c0c0 0% 25%,#fff 0% 50%) 0 0/2px 2px!important}
+.acc-wordpad-color{width:26px;height:24px;padding:2px;margin:0 2px;border:2px solid;border-color:#fff #404040 #404040 #fff;background:#c0c0c0;flex:0 0 26px;cursor:default}
+.acc-wordpad-ruler{box-sizing:border-box;display:flex;justify-content:space-between;flex-shrink:0;height:25px;margin:6px 26px 4px;padding:0 7px;border:1px solid #808080;background:linear-gradient(to bottom,transparent 65%,#fff 65%),repeating-linear-gradient(to right,transparent 0px,transparent 8px,#808080 8px,#808080 9px);background-color:#fff;font:10px/17px Arial,sans-serif;color:#333;overflow:hidden}
+.acc-wordpad-ruler span{min-width:9px;text-align:center;background:#fff}
+.acc-wordpad-scroll{flex:1;min-height:0;overflow:auto;background:#808080;border:2px solid;border-color:#404040 #fff #fff #404040;padding:14px 22px}
+.acc-wordpad-page{box-sizing:border-box;background:#fff;color:#000;min-height:100%;width:100%;max-width:850px;margin:0 auto;padding:36px 42px;outline:none;line-height:1.45;overflow-wrap:anywhere;box-shadow:2px 2px #404040;cursor:text;user-select:text}
+.acc-wordpad-page:empty:before{content:'\200b'}
+.acc-wordpad-page p{margin:0 0 .75em}
+.acc-wordpad-page blockquote{margin:0 0 0 32px}
+.acc-wordpad-page table{border-collapse:collapse;width:100%}
+.acc-wordpad-page td,.acc-wordpad-page th{border:1px solid #777;padding:4px}
+.acc-wordpad-page ::selection{background:#000080;color:#fff}
+.acc-wordpad .statusbar{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:0}
+
+/* Calculator */
+.acc-calc-content{padding:6px 10px 10px;display:flex;flex-direction:column;gap:6px;flex:1;min-height:0;box-sizing:border-box}
+.acc-calc-expression{min-height:16px;text-align:right;color:#404040;font:11px/16px "MS Sans Serif",Tahoma,sans-serif;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding:0 4px}
+.acc-calc-display-row{position:relative;flex-shrink:0}
+.acc-calc-display{box-sizing:border-box;display:block;background:#fff;color:#000;width:100%;height:35px;border:2px solid;border-color:#808080 #fff #fff #808080;box-shadow:inset 1px 1px #000;border-radius:0;text-align:right;padding:2px 7px 2px 24px;font:21px/28px "Lucida Console","Courier New",monospace;outline:none}
+.acc-calc-display.acc-calc-error{font-size:11px;font-family:Tahoma,sans-serif}
+.acc-calc-memory{position:absolute;left:7px;top:10px;font-size:11px;z-index:1}
+.acc-calc-area{display:flex;gap:10px;flex:1;min-height:0}
+.acc-calc-standard{display:flex;flex-direction:column;gap:7px;flex:1;min-width:0}
+.acc-calc-clears{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:6px;margin-left:43px}
+.acc-calc-keypad-row{display:flex;gap:8px;flex:1;min-height:0}
+.acc-calc-memory-keys{display:grid;grid-template-rows:repeat(5,1fr);gap:6px;flex:0 0 36px}
+.acc-calc-keypad{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(4,1fr);gap:6px;flex:1;min-width:0}
+.acc-calc-key{min-width:0;height:100%;min-height:29px;padding:1px 3px;font:12px "MS Sans Serif",Tahoma,sans-serif}
+.acc-calc-clears .acc-calc-key{min-height:30px;height:30px;font-size:11px}
+.acc-calc-digit{color:#000080;font-weight:bold;font-size:14px}
+.acc-calc-red{color:#900000}
+.acc-calc-science{display:flex;flex-direction:column;gap:6px;flex:0 0 240px;border-right:1px solid #808080;padding-right:10px}
+.acc-calc-science[hidden]{display:none}
+.acc-calc-angle,.acc-calc-toggles{display:flex;align-items:center;gap:8px;height:20px;flex-shrink:0}
+.acc-calc-angle label,.acc-calc-toggles label{display:flex;align-items:center;gap:2px;white-space:nowrap;font-size:11px}
+.acc-calc-angle input,.acc-calc-toggles input{width:13px;height:13px;margin:0;accent-color:#000080}
+.acc-calc-science-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(26px,1fr);gap:5px;flex:1}
+.acc-calc-function{color:#000080;font-size:11px}
+.acc-calc-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;height:27px;flex-shrink:0}
+.acc-calc-stats button{font-size:10px;min-height:25px;padding:1px}
+.acc-calc-statline{font-size:10px;color:#404040;height:14px;flex-shrink:0}
+.acc-calc-scientific .acc-calc-standard{min-width:260px}
+
+/* Command Prompt */
+.acc-dos-terminal{box-sizing:border-box;flex:1;min-height:0;margin:2px;border:2px solid;border-color:#404040 #fff #fff #404040;background:#000;color:#c0c0c0;padding:7px 8px;font:14px/1.35 "Courier New",monospace;overflow:auto;cursor:text;outline:none;user-select:text}
+.acc-dos-output{white-space:pre-wrap;overflow-wrap:break-word}
+.acc-dos-line{min-height:1.35em;margin-bottom:0;white-space:pre-wrap;font:inherit}
+.acc-dos-input-row{display:flex;align-items:baseline;min-height:1.35em;white-space:nowrap;font:inherit;margin:0;padding:0}
+.acc-dos-prompt{flex-shrink:0;font:inherit}
+.acc-dos-input{display:block;box-sizing:border-box;flex:1;min-width:30px;margin:0;padding:0;border:0;border-radius:0;outline:none;box-shadow:none;background:#000;color:#c0c0c0;font:inherit;height:1.35em;line-height:1.35;caret-color:#c0c0c0;user-select:text}
+.acc-dos-input:disabled{opacity:1;color:#c0c0c0}
+.acc-dos-terminal ::selection{color:#000;background:#c0c0c0}
+@media(max-width:600px){.acc-calc-science{flex-basis:190px}.acc-calc-scientific .acc-calc-standard{min-width:245px}.acc-calc-scientific .acc-calc-area{overflow:auto}.acc-wordpad-page{padding:24px}.acc-wordpad-scroll{padding:10px}.acc-font-select{width:135px;flex-basis:135px}}

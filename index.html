@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="theme-color" content="#008080">
+<title>Windows 98</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles/classic.css">
+<link rel="stylesheet" href="./packages/accessories/styles.css">
+<link rel="stylesheet" href="./packages/paint/styles.css">
+<link rel="stylesheet" href="./packages/games/styles.css">
+<link rel="stylesheet" href="./packages/media/styles.css">
+<link rel="stylesheet" href="./packages/system/styles.css">
+<link rel="stylesheet" href="./packages/utilities/styles.css">
+</head>
+<body>
+<main id="desktop" aria-label="Windows 98 desktop">
+<canvas id="wallpaper" aria-hidden="true">
+</canvas>
+<div id="desktop-icons" role="list" aria-label="Desktop icons">
+</div>
+<div id="windows">
+</div>
+<div id="selection-box" hidden>
+</div>
+</main>
+<footer id="taskbar" aria-label="Taskbar">
+<button id="start-button" aria-label="Start" aria-expanded="false">
+<span id="start-icon">
+</span>
+<b>Start</b>
+</button>
+<div class="taskbar-grip">
+</div>
+<div id="quick-launch" aria-label="Quick Launch">
+</div>
+<div class="taskbar-grip">
+</div>
+<div id="task-buttons" aria-label="Running applications">
+</div>
+<div id="tray">
+<button id="tray-volume" title="Volume Control" aria-label="Volume Control">
+</button>
+<button id="tray-network" title="Network status" aria-label="Network status">
+</button>
+<button id="tray-clock" title="Date and Time Properties" aria-label="Date and Time">
+</button>
+</div>
+</footer>
+<div id="menu-layer">
+</div>
+<div id="startup" class="startup" aria-live="polite">
+<div class="startup-brand">
+<span>Microsoft</span>
+<strong>Windows<span>98</span>
+</strong>
+<small>Starting Windows...</small>
+</div>
+<div class="boot-progress">
+</div>
+</div>
+<noscript>JavaScript is required to start this desktop.</noscript>
+<script type="importmap">
+{
+  "imports": {
+    "@win98/core": "./packages/core/index.js",
+    "@win98/window-manager": "./packages/window-manager/index.js",
+    "@win98/ui": "./packages/ui/index.js",
+    "@win98/shell": "./packages/shell/index.js",
+    "@win98/explorer": "./packages/explorer/index.js",
+    "@win98/graphics": "./packages/graphics/index.js",
+    "@win98/accessories": "./packages/accessories/index.js",
+    "@win98/paint": "./packages/paint/index.js",
+    "@win98/games": "./packages/games/index.js",
+    "@win98/media": "./packages/media/index.js",
+    "@win98/browser": "./packages/browser/index.js",
+    "@win98/system": "./packages/system/index.js",
+    "@win98/utilities": "./packages/utilities/index.js"
+  }
+}
+</script>
+<script type="module" src="./main.js">
+</script>
+</body>
+</html>

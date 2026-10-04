@@ -1,0 +1,23 @@
+{
+  "name": "@win98/explorer",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Reusable Windows 98 browser desktop explorer package",
+  "license": "MIT",
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "*.js",
+    "*.css",
+    "fonts",
+    "ASSET-SOURCES.md"
+  ],
+  "dependencies": {
+    "@win98/core": "1.0.0",
+    "@win98/ui": "1.0.0"
+  }
+}

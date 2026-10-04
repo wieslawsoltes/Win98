@@ -1,0 +1,205 @@
+[
+  {
+    "key": "my-computer",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/my-computer-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/computer_explorer_1.png",
+    "filename": "my-computer-16.png"
+  },
+  {
+    "key": "my-computer",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/my-computer-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/computer_explorer_3.png",
+    "filename": "my-computer-32.png"
+  },
+  {
+    "key": "my-documents",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/my-documents-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/directory_open_file_mydocs_3.png",
+    "filename": "my-documents-16.png"
+  },
+  {
+    "key": "my-documents",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/my-documents-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/directory_open_file_mydocs_1.png",
+    "filename": "my-documents-32.png"
+  },
+  {
+    "key": "network",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/network-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/network_normal_two_pcs_3.png",
+    "filename": "network-16.png"
+  },
+  {
+    "key": "network",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/network-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/network_normal_two_pcs_2.png",
+    "filename": "network-32.png"
+  },
+  {
+    "key": "recycle-bin",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/recycle-bin-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/recycle_bin_empty_3.png",
+    "filename": "recycle-bin-16.png"
+  },
+  {
+    "key": "recycle-bin",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/recycle-bin-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/recycle_bin_empty_2.png",
+    "filename": "recycle-bin-32.png"
+  },
+  {
+    "key": "recycle-bin-full",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/recycle-bin-full-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/recycle_bin_full_5.png",
+    "filename": "recycle-bin-full-16.png"
+  },
+  {
+    "key": "recycle-bin-full",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/recycle-bin-full-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/recycle_bin_full_3.png",
+    "filename": "recycle-bin-full-32.png"
+  },
+  {
+    "key": "internet-explorer",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/internet-explorer-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/msie1_4.png",
+    "filename": "internet-explorer-16.png"
+  },
+  {
+    "key": "internet-explorer",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/internet-explorer-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/msie1_1.png",
+    "filename": "internet-explorer-32.png"
+  },
+  {
+    "key": "folder",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/folder-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/directory_closed_1.png",
+    "filename": "folder-16.png"
+  },
+  {
+    "key": "folder",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/folder-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/directory_closed_3.png",
+    "filename": "folder-32.png"
+  },
+  {
+    "key": "notepad",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/notepad-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/notepad_3.png",
+    "filename": "notepad-16.png"
+  },
+  {
+    "key": "notepad",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/notepad-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/notepad_4.png",
+    "filename": "notepad-32.png"
+  },
+  {
+    "key": "paint",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/paint-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/paint_old_1.png",
+    "filename": "paint-16.png"
+  },
+  {
+    "key": "paint",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/paint-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/paint_old_0.png",
+    "filename": "paint-32.png"
+  },
+  {
+    "key": "calculator",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/calculator-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/calculator_1.png",
+    "filename": "calculator-16.png"
+  },
+  {
+    "key": "calculator",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/calculator-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/calculator_0.png",
+    "filename": "calculator-32.png"
+  },
+  {
+    "key": "solitaire",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/solitaire-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/game_solitaire_1.png",
+    "filename": "solitaire-16.png"
+  },
+  {
+    "key": "solitaire",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/solitaire-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/game_solitaire_0.png",
+    "filename": "solitaire-32.png"
+  },
+  {
+    "key": "control-panel",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/control-panel-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/directory_control_panel_1.png",
+    "filename": "control-panel-16.png"
+  },
+  {
+    "key": "control-panel",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/control-panel-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/directory_control_panel_2.png",
+    "filename": "control-panel-32.png"
+  },
+  {
+    "key": "minesweeper",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/minesweeper-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/minesweeper_0.png",
+    "filename": "minesweeper-32.png"
+  },
+  {
+    "key": "minesweeper",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/minesweeper-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/game_mine_1_1.png",
+    "filename": "minesweeper-16.png"
+  },
+  {
+    "key": "windows",
+    "size": 16,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/windows-16.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/windows_4.png",
+    "filename": "windows-16.png"
+  },
+  {
+    "key": "windows",
+    "size": 22,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/windows-22.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/windows_5.png",
+    "filename": "windows-22.png"
+  },
+  {
+    "key": "windows",
+    "size": 32,
+    "file": "/workspace/scratch/39e29cc46e91/reference-assets/selected/windows-32.png",
+    "source": "https://raw.githubusercontent.com/alexh/vintage-icons/main/static/icons/windows_0.png",
+    "filename": "windows-32.png"
+  }
+]

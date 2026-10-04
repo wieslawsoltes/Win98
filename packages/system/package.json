@@ -1,0 +1,23 @@
+{
+  "name": "@win98/system",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Reusable Windows 98 browser desktop system package",
+  "license": "MIT",
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./styles.css": "./styles.css"
+  },
+  "files": [
+    "*.js",
+    "*.css",
+    "fonts",
+    "ASSET-SOURCES.md"
+  ],
+  "dependencies": {
+    "@win98/graphics": "1.0.0"
+  }
+}

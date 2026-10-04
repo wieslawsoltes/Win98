@@ -1,0 +1,53 @@
+.paint-app{display:flex;flex:1;flex-direction:column;min-width:0;min-height:0;background:#c0c0c0;color:#000;font:11px "MS Sans Serif",Tahoma,Arial,sans-serif;outline:none;overflow:hidden}
+.paint-app *{box-sizing:border-box}
+.paint-app [hidden],.paint-status[hidden]{display:none!important}
+.paint-work-row{display:flex;flex:1;min-height:0;min-width:0;border-top:1px solid #808080}
+.paint-toolbox{width:61px;flex:0 0 61px;padding:3px 4px 4px 3px;border-right:1px solid #808080;box-shadow:1px 0 #fff;overflow-y:auto;overflow-x:hidden;scrollbar-width:none}
+.paint-toolbox::-webkit-scrollbar{width:0}
+.paint-tool-grid{display:grid;grid-template-columns:26px 26px;grid-auto-rows:26px;gap:0;width:52px;margin:0 0 7px}
+.paint-tool,.paint-option-button{appearance:none;border:0;border-radius:0;background:#c0c0c0;color:#000;padding:0;box-shadow:inset 1px 1px #fff,inset -1px -1px #000,inset 2px 2px #dfdfdf,inset -2px -2px #808080;font:11px "MS Sans Serif",Tahoma,Arial,sans-serif;cursor:default;display:flex;align-items:center;justify-content:center;position:relative}
+.paint-tool{width:26px;height:26px}
+.paint-tool svg{flex:none;pointer-events:none}
+.paint-tool.is-selected,.paint-option-button.is-selected,.paint-tool:active,.paint-option-button:active{box-shadow:inset 1px 1px #000,inset -1px -1px #fff,inset 2px 2px #808080,inset -2px -2px #dfdfdf;background-color:#ddd;background-image:repeating-conic-gradient(#fff 0% 25%,transparent 0% 50%);background-size:2px 2px}
+.paint-tool.is-selected svg,.paint-tool:active svg{transform:translate(1px,1px)}
+.paint-tool:focus-visible::after,.paint-option-button:focus-visible::after{content:"";position:absolute;inset:4px;border:1px dotted #000;pointer-events:none}
+.paint-tool-options{width:51px;min-height:54px;display:flex;flex-direction:column;align-items:stretch;padding:3px;margin:0;background:#c0c0c0;box-shadow:inset 1px 1px #808080,inset -1px -1px #fff}
+.paint-option-label{font-size:10px;text-align:center;padding:1px 0 3px;white-space:nowrap}
+.paint-option-button{min-height:22px;width:100%;margin:1px 0;font-size:10px;line-height:1.05}
+.paint-width-options{display:flex;flex-direction:column;gap:0}
+.paint-width-options .paint-option-button{height:21px;min-height:21px}
+.paint-size-line{display:block;width:28px;background:currentColor}
+.paint-size-square{display:block;background:currentColor}
+.paint-brush-options{display:grid;grid-template-columns:1fr 1fr;gap:1px}
+.paint-brush-options .paint-option-button{font-size:16px;height:22px;min-width:0}
+.paint-font-select,.paint-font-size{width:43px;min-width:0;height:21px;font:10px Tahoma,Arial,sans-serif;padding:1px;color:#000;background:#fff;border:1px solid #808080;border-radius:0;margin-bottom:3px}
+.paint-font-select{font-size:9px}
+.paint-workspace{position:relative;flex:1;min-width:0;min-height:0;overflow:auto;background:#808080;border:0;box-shadow:inset 1px 1px #000,inset 2px 2px #404040;overscroll-behavior:contain;padding:7px 12px 12px 7px}
+.paint-surface{position:relative;flex:none;background:white;box-shadow:0 0 0 1px #808080;margin:0;touch-action:none;isolation:isolate}
+.paint-canvas,.paint-overlay{position:absolute;inset:0;display:block;width:100%;height:100%;image-rendering:pixelated;image-rendering:crisp-edges}
+.paint-canvas{z-index:1;touch-action:none;cursor:crosshair}
+.paint-overlay{z-index:2;pointer-events:none;background:transparent}
+.paint-text-editor{position:absolute;z-index:4;min-width:20px;min-height:20px;max-width:none;max-height:none;display:block;resize:both;overflow:hidden;white-space:pre-wrap;overflow-wrap:break-word;padding:2px;border:1px dashed #000;border-radius:0;outline:1px dashed #fff;outline-offset:0;box-shadow:none;box-sizing:border-box;font-family:Arial,sans-serif;user-select:text}
+.paint-resize-handle{position:absolute;z-index:5;width:6px;height:6px;background:#fff;border:1px solid #000;touch-action:none}
+.paint-resize-e{right:-7px;top:50%;transform:translateY(-50%);cursor:ew-resize}
+.paint-resize-s{bottom:-7px;left:50%;transform:translateX(-50%);cursor:ns-resize}
+.paint-resize-se{right:-7px;bottom:-7px;cursor:nwse-resize}
+.paint-resize-ghost{position:absolute;left:0;top:0;z-index:7;border:1px dashed #fff;outline:1px dashed #000;background:transparent;pointer-events:none}
+.paint-palette{display:flex;align-items:center;flex:none;height:51px;padding:5px 5px 5px 4px;border-top:1px solid #fff;gap:6px;overflow:hidden}
+.paint-current-colors{position:relative;flex:0 0 40px;width:40px;height:35px;border:0;border-radius:0;padding:0;background-color:#fff;background-image:repeating-conic-gradient(#c0c0c0 0% 25%,transparent 0% 50%);background-size:2px 2px;box-shadow:inset 1px 1px #808080,inset -1px -1px #fff;cursor:default}
+.paint-color-back,.paint-color-front{position:absolute;width:20px;height:20px;border:2px solid #c0c0c0;box-shadow:1px 1px #000,-1px -1px #fff}
+.paint-color-back{left:15px;top:11px;background:#fff}
+.paint-color-front{left:5px;top:4px;background:#000}
+.paint-swatches{display:grid;grid-template-columns:repeat(14,16px);grid-template-rows:repeat(2,16px);gap:0;padding:1px;flex:none}
+.paint-swatch{width:16px;height:16px;border:0;border-radius:0;background:#c0c0c0;padding:2px;box-shadow:inset 1px 1px #808080,inset -1px -1px #fff;cursor:default}
+.paint-swatch span{display:block;width:12px;height:12px;border:1px solid #000}
+.paint-swatch:focus-visible{outline:1px dotted #000;outline-offset:1px;z-index:1}
+.paint-hidden-file{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;clip-path:inset(50%);pointer-events:none}
+.paint-status{display:flex!important;flex:none;align-items:stretch;min-height:21px;max-height:23px;overflow:hidden;gap:0;padding:2px 1px 1px!important;background:#c0c0c0;color:#000;font:10px "MS Sans Serif",Tahoma,Arial,sans-serif}
+.paint-status>span{display:block;padding:2px 5px 1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:inset 1px 1px #808080,inset -1px -1px #fff;min-width:0}
+.paint-status-help{flex:1}
+.paint-status-coords{width:88px;flex:none}
+.paint-status-size{width:94px;flex:none}
+.paint-status-zoom{width:43px;flex:none;text-align:center}
+.paint-is-busy .paint-canvas{cursor:wait!important}
+@media(max-width:600px){.paint-status-coords{width:67px}.paint-status-size{width:85px}.paint-status-help{font-size:9px}}
